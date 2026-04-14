@@ -1,0 +1,20 @@
+[2026-04-14T20:00:41Z] === ENRICH ITERATION 1 START | repo=kislyuk/argcomplete sha=fae5549a ===
+[2026-04-14T20:00:41Z] [iter=1] PHASE START: enrich repo=kislyuk/argcomplete sha=fae5549a runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/fae5549a-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/fae5549ac1e89ec05de7d11ff33f540c74fc3b18.nq.gz
+[2026-04-14T20:00:46Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-14T20:00:48Z] [iter=1] AST store loaded triples=191197 load_secs=2 mem_mb=340 MB
+[2026-04-14T20:00:48Z] [iter=1] Step 2: Finding LSP targets mem_mb=340 MB
+[2026-04-14T20:00:48Z] [iter=1] LSP targets found call_sites=1454 imports=81 extends=23 implements=0 secs=0
+[2026-04-14T20:00:49Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=340 MB
+[2026-04-14T20:00:50Z] [iter=1] Position index built positions=13490 nodes_with_types=17677 secs=1 mem_mb=340 MB
+[2026-04-14T20:00:50Z] [iter=1] Step 3: Starting LSP resolution mem_mb=340 MB already_completed_types=[] already_completed_files=0
+[2026-04-14T20:00:50Z] [iter=1] Resolving target type target_type=call_site count=1454
+[2026-04-14T20:01:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.0 files_done=1 resolved=246 errors=605 current=argcomplete/scripts/python_argcomplete_check_easy_install_script.py
+[2026-04-14T20:02:07Z] [iter=1] Target type resolved target_type=call_site resolved=500 errors=924 secs=77 mem_mb=340 MB
+[2026-04-14T20:02:07Z] [iter=1] Resolving target type target_type=import_statement count=81
+[2026-04-14T20:02:09Z] [iter=1] Target type resolved target_type=import_statement resolved=77 errors=0 secs=2 mem_mb=340 MB
+[2026-04-14T20:02:09Z] [iter=1] Resolving target type target_type=extends_clause count=23
+[2026-04-14T20:02:10Z] [iter=1] HEARTBEAT target_type=extends_clause elapsed_min=1.5 files_done=0 resolved=0 errors=0 current=test/test.py
+[2026-04-14T20:02:10Z] [iter=1] Target type resolved target_type=extends_clause resolved=22 errors=0 secs=1 mem_mb=340 MB
+[2026-04-14T20:02:13Z] [iter=1] Step 5: Writing final enrichment file triples=12781
+[2026-04-14T20:02:13Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/fae5549ac1e89ec05de7d11ff33f540c74fc3b18.nq.gz size_kb=219
+[2026-04-14T20:02:13Z] [iter=1] PHASE END: enrich elapsed_s=92 elapsed_min=1.5 total_triples=12781
